@@ -4,7 +4,7 @@ use PHPUnit\Framework\TestCase;
 class OfferTest extends TestCase
 {
     /**
-     * @dataProvider additionProvider
+     * @dataProvider inputProvider
      */
     
 	public function testwithinvalidOfferamt($item, $quantity,$result)
@@ -46,7 +46,7 @@ class OfferTest extends TestCase
         $this->assertEquals($result, $sumamt);
     }
 
-    public function additionProvider()
+    public function inputProvider()
     {
         return [
             ['A', 4,200],
