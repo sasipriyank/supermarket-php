@@ -45,7 +45,7 @@ if (isset($_POST['submit'])) {
 <label for="Items">Choose a Item:</label>
 
 <select name="items" id="items" onchange="loadOffer()" >
-  <option value="A" <?=(isset($items))? $items : 'A'; ?>>A</option>
+  <option value="A">A</option>
   <option value="B">B</option>
   <option value="C">C</option>
   <option value="D">D</option>
