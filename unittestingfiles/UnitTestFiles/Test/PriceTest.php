@@ -4,7 +4,7 @@ use PHPUnit\Framework\TestCase;
 class PriceTest extends TestCase
 {
     /**
-     * @dataProvider additionProvider
+     * @dataProvider inputProvider
      */
     public function testSpecialoffer($item, $quantity,$result)
     {
@@ -56,7 +56,7 @@ class PriceTest extends TestCase
     }
 	
 
-    public function additionProvider()
+    public function inputProvider()
     {
         return [
             ['A', 4,180],
